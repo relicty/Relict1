@@ -141,8 +141,8 @@ public:
         consensus.hashGenesisBlock = genesis.GetHash();
 	printf("%s\n", consensus.hashGenesisBlock.ToString().c_str());
 	printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
-        assert(consensus.hashGenesisBlock == uint256S("0x00000f79a81b6318e0f36dc486adf4bb5bb1fa34025d69b991893c42978c2027"));
-        assert(genesis.hashMerkleRoot == uint256S("0x39bcbfcc23807869b05730a536ca42670914a7f97ba65be68bee9766d8c50071"));
+	assert(consensus.hashGenesisBlock == uint256S("0x8ddece7e8b4f5be6d11ec2a24a5febaa226cdf60fadc6e276666bde91b13696b"));
+        assert(genesis.hashMerkleRoot == uint256S("0x27fc98c4e1c7861cd4e49d508795b1416ed4a11f2ac0a516a40545eee239766b"));
 
 
 		vSeeds.push_back(CDNSSeedData("desire_node_1", "154.16.7.228"));
