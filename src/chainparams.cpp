@@ -51,7 +51,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "Desire cryptocurrency start 15.10.2017";
+    const char* pszTimestamp = "Relict cryptocurrency start 11.03.2018";
     const CScript genesisOutputScript = CScript() << ParseHex("046f3a2ef90985402d036de0470884fadf60df4d7635c8f2838872436f38c6ad6abd303a2c9064c44a664be2377ab153f834f2e6400a4124c0540360df5fa76326") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -137,7 +137,7 @@ public:
         nDelayGetHeadersTime = 24 * 60 * 60;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1508036652, 1443855, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1520794201, 1443856, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000f79a81b6318e0f36dc486adf4bb5bb1fa34025d69b991893c42978c2027"));
         assert(genesis.hashMerkleRoot == uint256S("0x39bcbfcc23807869b05730a536ca42670914a7f97ba65be68bee9766d8c50071"));
