@@ -189,9 +189,8 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            (  10429, uint256S("0x00000000037bd367a00790eb9eb29e120be858b0e2ed14d75f0ba9450a064786"))
-			(  50277, uint256S("0x00000000037bd367a00790eb9eb29e120be858b0e2ed14d75f0ba9450a064786")),
-            1516023591, // * UNIX timestamp of last checkpoint block
+            (  0, uint256S("0x8ddece7e8b4f5be6d11ec2a24a5febaa226cdf60fadc6e276666bde91b13696b")),
+            1520794201, // * UNIX timestamp of last checkpoint block
                  74137,    // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             5000        // * estimated number of transactions per day after checkpoint
@@ -306,9 +305,9 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            (    0, uint256S("0x00000f79a81b6318e0f36dc486adf4bb5bb1fa34025d69b991893c42978c2027")),
+            (    0, uint256S("0x8ddece7e8b4f5be6d11ec2a24a5febaa226cdf60fadc6e276666bde91b13696b")),
 
-            1508036652, // * UNIX timestamp of last checkpoint block
+            1520794201, // * UNIX timestamp of last checkpoint block
             3094,       // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             500         // * estimated number of transactions per day after checkpoint
@@ -398,7 +397,7 @@ public:
 
         checkpointData = (CCheckpointData){
             boost::assign::map_list_of
-            ( 0, uint256S("0x00000f79a81b6318e0f36dc486adf4bb5bb1fa34025d69b991893c42978c2027")),
+            ( 0, uint256S("0x8ddece7e8b4f5be6d11ec2a24a5febaa226cdf60fadc6e276666bde91b13696b")),
             0,
             0,
             0
